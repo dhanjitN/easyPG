@@ -3,9 +3,9 @@ import './App.css'
 function App() {
 
   return (
-    <>
-      <h1>easyPG</h1>
-    </>
+    <main className='min-h-screen bg-slate-800 text-white  '>
+      <h1 className='dark text-4xl'>easyPG</h1>
+    </main>
   )
 }
 
