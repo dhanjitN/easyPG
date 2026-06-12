@@ -26,7 +26,7 @@ const GENDER_OPTIONS = ['Any', 'Male', 'Female'];
 const TYPE_OPTIONS = ['Any', 'PG', 'Room'];
 
 export const HomePage = () => {
-  const [city, setCity] = useState('Bangalore');
+  const [city, setCity] = useState('Guwahati');
   const [priceRange, setPriceRange] = useState(PRICE_RANGES[0]);
   const [gender, setGender] = useState('Any');
   const [roomType, setRoomType] = useState('Any');
