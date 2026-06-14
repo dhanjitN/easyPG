@@ -1,18 +1,10 @@
 import React, { useState, useMemo } from 'react';
 import { NavLink } from 'react-router';
+import roomsDB from "../../data/rooms.json";
 
 const CITIES = ['Guwahati', 'Baihata Chariali', 'Mangaldai'];
 
-const ROOMS = [
-  { id: 1, title: 'Sunrise PG for Men', city: 'Guwahati', price: 8000, gender: 'Male', type: 'PG', image: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=400&h=300&fit=crop' },
-  { id: 2, title: 'Green Valley Hostel', city: 'Baihata Chariali', price: 6500, gender: 'Female', type: 'PG', image: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=400&h=300&fit=crop' },
-  { id: 3, title: 'Cozy 1BHK near Metro', city: 'Baihata Chariali', price: 15000, gender: 'Any', type: 'Room', image: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&h=300&fit=crop' },
-  { id: 4, title: 'Urban Nest Co-living', city: 'Baihata Chariali', price: 9500, gender: 'Any', type: 'PG', image: 'https://images.unsplash.com/photo-1560185007-c5ca9d2c014d?w=400&h=300&fit=crop' },
-  { id: 5, title: 'Lakeview Ladies PG', city: 'Guwahati', price: 7200, gender: 'Female', type: 'PG', image: 'https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=400&h=300&fit=crop' },
-  { id: 6, title: 'Spacious 2BHK Flat', city: 'Mangaldai', price: 18000, gender: 'Any', type: 'Room', image: 'https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=400&h=300&fit=crop' },
-  { id: 7, title: 'Tech Park Boys Hostel', city: 'Mangaldai', price: 7800, gender: 'Male', type: 'PG', image: 'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=400&h=300&fit=crop' },
-  { id: 8, title: 'Premium Studio Room', city: 'Mangaldai', price: 12000, gender: 'Any', type: 'Room', image: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=400&h=300&fit=crop' },
-];
+const ROOMS = roomsDB.listings;
 
 const PRICE_RANGES = [
   { label: 'Any price', min: 0, max: Infinity },
@@ -155,13 +147,13 @@ export const HomePage = () => {
             {filteredRooms.map((room) => (
               <div
                 key={room.id}
-                onClick={()=> window.open("/room")}
+                onClick={() => window.open("/room")}
                 className="bg-[#1A1D27] border border-gray-800 rounded-2xl overflow-hidden hover:border-gray-700 active:scale-[0.99] transition-all duration-150"
               >
                 <div className="relative">
                   <img
-                    src={room.image}
-                    alt={room.title}
+                    src={room.images[0]}
+                    alt={room.name}
                     className="w-full h-44 object-cover"
                   />
                   <span className="absolute top-3 left-3 bg-gray-950/80 text-gray-100 text-xs font-medium px-2.5 py-1 rounded-lg backdrop-blur-sm">
@@ -173,11 +165,17 @@ export const HomePage = () => {
                 </div>
                 <div className="p-4">
                   <h3 className="text-gray-100 font-semibold text-base mb-1 truncate">
-                    {room.title}
+                    {room.name}
                   </h3>
-                  <p className="text-gray-400 text-sm mb-2">{room.city}</p>
+                  <div className='flex gap-1'>
+                    <svg className="w-5 h-5 text-gray-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <p className="text-gray-400 text-sm mb-2">{room.location}</p>
+                  </div>
                   <div className="flex items-baseline gap-1">
-                    <span className="text-[#7C5CFC] font-semibold text-lg">
+                    <span className="text-[#c3b5fc] font-semibold text-2xl">
                       ₹{room.price.toLocaleString('en-IN')}
                     </span>
                     <span className="text-gray-500 text-sm">/month</span>

@@ -1,0 +1,142 @@
+{
+  "listings": [
+    {
+      "id": 1,
+      "name": "Sunrise PG for Men",
+      "city": "Guwahati",
+      "location": "Koramangala, 5th Block, Bangalore - 560095",
+      "gender": "Male",
+      "type": "PG",
+      "price": 8000,
+      "deposit": 16000,
+      "availableFrom": "1st July 2026",
+      "description": "A comfortable and well-maintained PG located in the heart of Koramangala, just 5 minutes walk from the bus stop and close to major tech parks. The rooms are spacious with attached washrooms, and the property offers a homely environment with all essential amenities.",
+      "amenities": ["WiFi", "Power Backup", "Laundry", "Housekeeping", "3 Meals Included", "CCTV Security", "Parking", "AC Rooms"],
+      "rules": ["No smoking inside premises", "Visitors allowed till 8 PM", "ID proof mandatory at check-in"],
+      "owner": { "name": "Ramesh Kumar", "phone": "+919876543210" },
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9!2d77.6245!3d12.9352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14f2d9e0e0e1%3A0x1!2sKoramangala%2C+Bangalore!5e0!3m2!1sen!2sin!4v1234567890",
+      "images": [
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1560185007-c5ca9d2c014d?w=800&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Greenwood Ladies PG",
+      "city": "Guwahati",
+      "location": "HSR Layout, Sector 2, Bangalore - 560102",
+      "gender": "Female",
+      "type": "PG",
+      "price": 9500,
+      "deposit": 19000,
+      "availableFrom": "15th June 2026",
+      "description": "A secure and friendly PG for working women, located in a quiet residential area of HSR Layout. Walking distance to grocery stores, cafes, and bus stops. Includes home-cooked meals and a dedicated study/lounge area.",
+      "amenities": ["WiFi", "Power Backup", "Laundry", "Housekeeping", "3 Meals Included", "CCTV Security", "Lift", "Hot Water"],
+      "rules": ["No smoking or alcohol", "Visitors allowed only in common area", "Curfew at 10 PM", "ID proof mandatory at check-in"],
+      "owner": { "name": "Lakshmi Narayanan", "phone": "+919845012345" },
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9!2d77.6408!3d12.9116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14f2d9e0e0e2%3A0x2!2sHSR+Layout%2C+Bangalore!5e0!3m2!1sen!2sin!4v1234567891",
+      "images": [
+        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1556020685-ae41abfc9365?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1571508601891-ca5e7a713859?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Urban Nest Co-living",
+      "city": "Mangaldai",
+      "location": "Viman Nagar, Pune - 411014",
+      "gender": "Co-ed",
+      "type": "Co-living",
+      "price": 12000,
+      "deposit": 24000,
+      "availableFrom": "1st August 2026",
+      "description": "Modern co-living space designed for young professionals, featuring fully furnished rooms, high-speed internet, and a vibrant community lounge. Located near IT parks and the airport, with easy access to restaurants and malls.",
+      "amenities": ["WiFi", "Power Backup", "Laundry", "Housekeeping", "Gym", "CCTV Security", "Parking", "AC Rooms", "Common Kitchen", "Recreation Room"],
+      "rules": ["No smoking inside rooms", "Visitors allowed till 9 PM", "ID proof mandatory at check-in", "Quiet hours after 11 PM"],
+      "owner": { "name": "Priya Deshmukh", "phone": "+919920134567" },
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.5!2d73.9143!3d18.5679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1a1a1a1a1a1%3A0x3!2sViman+Nagar%2C+Pune!5e0!3m2!1sen!2sin!4v1234567892",
+      "images": [
+        "https://images.unsplash.com/photo-1551776235-dde6d482980b?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=800&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Comfort Stay Hostel",
+      "city": "Mangaldai",
+      "location": "Gachibowli, Hyderabad - 500032",
+      "gender": "Male",
+      "type": "Hostel",
+      "price": 6500,
+      "deposit": 10000,
+      "availableFrom": "10th July 2026",
+      "description": "Budget-friendly hostel accommodation ideal for students and early-career professionals. Located close to Gachibowli financial district with shared rooms, basic amenities, and a focus on affordability without compromising hygiene.",
+      "amenities": ["WiFi", "Power Backup", "3 Meals Included", "CCTV Security", "Common TV Room", "Hot Water"],
+      "rules": ["No smoking or alcohol", "Visitors not allowed inside rooms", "ID proof mandatory at check-in", "Lights out by 11 PM"],
+      "owner": { "name": "Suresh Reddy", "phone": "+919966778899" },
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.7!2d78.3489!3d17.4435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93e6e6e6e6e6%3A0x4!2sGachibowli%2C+Hyderabad!5e0!3m2!1sen!2sin!4v1234567893",
+      "images": [
+        "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1521783988139-89397d761dce?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1505873242700-f289a29e1e0f?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Serene Living Apartments",
+      "city": "Baihata Chariali",
+      "location": "Velachery, Chennai - 600042",
+      "gender": "Female",
+      "type": "Apartment",
+      "price": 11000,
+      "deposit": 22000,
+      "availableFrom": "20th June 2026",
+      "description": "Spacious shared apartment for female professionals, offering private rooms within a fully furnished 3BHK setup. Close to IT corridor and metro station, with a peaceful neighborhood and reliable amenities.",
+      "amenities": ["WiFi", "Power Backup", "Laundry", "Housekeeping", "AC Rooms", "CCTV Security", "Lift", "Parking", "Refrigerator"],
+      "rules": ["No smoking or alcohol", "Visitors allowed till 7 PM", "ID proof mandatory at check-in"],
+      "owner": { "name": "Anitha Subramaniam", "phone": "+919884556677" },
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0!2d80.2206!3d12.9750!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525e6e6e6e6e6e%3A0x5!2sVelachery%2C+Chennai!5e0!3m2!1sen!2sin!4v1234567894",
+      "images": [
+        "https://images.unsplash.com/photo-1502672023488-70e25813eb80?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1560185009-5bf9f2849488?w=800&h=600&fit=crop"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Tech Hub PG",
+      "city": "Baihata Chariali",
+      "location": "Whitefield, Bangalore - 560066",
+      "gender": "Male",
+      "type": "PG",
+      "price": 9000,
+      "deposit": 18000,
+      "availableFrom": "5th July 2026",
+      "description": "Premium PG accommodation for working professionals near Whitefield IT corridor. Offers single and double occupancy rooms with modern interiors, high-speed WiFi, and nutritious meals prepared daily.",
+      "amenities": ["WiFi", "Power Backup", "Laundry", "Housekeeping", "3 Meals Included", "CCTV Security", "AC Rooms", "Gym", "Parking"],
+      "rules": ["No smoking inside premises", "Visitors allowed till 8 PM", "ID proof mandatory at check-in", "No loud music after 10 PM"],
+      "owner": { "name": "Vikram Shetty", "phone": "+919900112233" },
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.5!2d77.7499!3d12.9698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae128f8f8f8f8f%3A0x6!2sWhitefield%2C+Bangalore!5e0!3m2!1sen!2sin!4v1234567895",
+      "images": [
+        "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1567016432779-094069958ea5?w=800&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1574643156929-51fa098b0394?w=800&h=600&fit=crop"
+      ]
+    }
+  ]
+}
