@@ -1,33 +1,8 @@
 import React, { useState } from 'react';
+import roomDB from "../../data/rooms.json";
 
-// Mock data — replace with API response later
-const ROOM_DATA = {
-  id: 1,
-  name: 'Sunrise PG for Men',
-  city: 'Bangalore',
-  location: 'Koramangala, 5th Block, Bangalore - 560095',
-  gender: 'Male',
-  type: 'PG',
-  price: 8000,
-  deposit: 16000,
-  availableFrom: '1st July 2026',
-  description:
-    'A comfortable and well-maintained PG located in the heart of Koramangala, just 5 minutes walk from the bus stop and close to major tech parks. The rooms are spacious with attached washrooms, and the property offers a homely environment with all essential amenities.',
-  amenities: ['WiFi', 'Power Backup', 'Laundry', 'Housekeeping', '3 Meals Included', 'CCTV Security', 'Parking', 'AC Rooms'],
-  rules: ['No smoking inside premises', 'Visitors allowed till 8 PM', 'ID proof mandatory at check-in'],
-  owner: {
-    name: 'Ramesh Kumar',
-    phone: '+919876543210',
-  },
-  mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9!2d77.6245!3d12.9352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14f2d9e0e0e1%3A0x1!2sKoramangala%2C+Bangalore!5e0!3m2!1sen!2sin!4v1234567890',
-  images: [
-    'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&h=600&fit=crop',
-    'https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&h=600&fit=crop',
-    'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop',
-    'https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=800&h=600&fit=crop',
-    'https://images.unsplash.com/photo-1560185007-c5ca9d2c014d?w=800&h=600&fit=crop',
-  ],
-};
+
+const ROOM_DATA = roomDB.listings[0];
 
 export const RoomPage = ({ room = ROOM_DATA }) => {
   const [activeImage, setActiveImage] = useState(0);
@@ -54,9 +29,8 @@ export const RoomPage = ({ room = ROOM_DATA }) => {
               <button
                 key={idx}
                 onClick={() => setActiveImage(idx)}
-                className={`rounded-lg overflow-hidden border-2 transition-colors ${
-                  activeImage === idx ? 'border-indigo-500' : 'border-gray-800'
-                }`}
+                className={`rounded-lg overflow-hidden border-2 transition-colors ${activeImage === idx ? 'border-indigo-500' : 'border-gray-800'
+                  }`}
               >
                 <img
                   src={img}
@@ -71,23 +45,22 @@ export const RoomPage = ({ room = ROOM_DATA }) => {
         {/* Title + tags */}
         <div className="mb-5">
           <div className="flex items-center gap-2 mb-2">
-            <span className="bg-gray-800 text-gray-200 text-xs font-medium px-2.5 py-1 rounded-lg">
+            <span className="bg-indigo-500 text-white text-xs font-semibold px-2.5 py-1 rounded-lg">
               {room.type}
             </span>
-            <span className="bg-gray-800 text-gray-200 text-xs font-medium px-2.5 py-1 rounded-lg">
+            <span className={`inline-flex items-center gap-1 text-xs font-medium px-2.5 py-1 rounded-lg border ${room.gender === 'Male'
+              ? 'bg-blue-500/10 text-blue-300 border-blue-500/20'
+              : room.gender === 'Female'
+                ? 'bg-pink-500/10 text-pink-300 border-pink-500/20'
+                : 'bg-purple-500/10 text-purple-300 border-purple-500/20'
+              }`}>
+              <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.67-5.33-4-8-4z" />
+              </svg>
               {room.gender}
             </span>
           </div>
-          <h1 className="text-2xl sm:text-3xl font-semibold text-gray-100 mb-1">
-            {room.name}
-          </h1>
-          <div className="flex items-center gap-1.5 text-gray-400 text-sm">
-            <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-            </svg>
-            {room.location}
-          </div>
+          {/* ... */}
         </div>
 
         {/* Price card */}
@@ -102,22 +75,17 @@ export const RoomPage = ({ room = ROOM_DATA }) => {
             </div>
           </div>
           <div className="border-l border-gray-800 pl-4">
-            <p className="text-gray-400 text-sm mb-1">Security deposit</p>
+            {/* <p className="text-gray-400 text-sm mb-1">Security deposit</p>
             <p className="text-gray-100 font-medium text-lg">
               ₹{room.deposit.toLocaleString('en-IN')}
-            </p>
+            </p> */}
           </div>
-          <div className="border-l border-gray-800 pl-4">
+          {/* <div className="border-l border-gray-800 pl-4">
             <p className="text-gray-400 text-sm mb-1">Available from</p>
             <p className="text-gray-100 font-medium text-lg">{room.availableFrom}</p>
-          </div>
+          </div> */}
         </div>
 
-        {/* Description */}
-        <div className="mb-5">
-          <h2 className="text-lg font-semibold text-gray-100 mb-2">About this place</h2>
-          <p className="text-gray-400 text-sm leading-relaxed">{room.description}</p>
-        </div>
 
         {/* Amenities */}
         <div className="mb-5">
@@ -137,6 +105,24 @@ export const RoomPage = ({ room = ROOM_DATA }) => {
           </div>
         </div>
 
+        {/* Map */}
+        <div className="mb-5">
+          <h2 className="text-lg font-semibold text-gray-100 mb-3">Location</h2>
+          <div className="rounded-2xl overflow-hidden border border-gray-800">
+            <iframe
+              src={room.mapEmbedUrl}
+              width="100%"
+              height="300"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Room location map"
+            />
+          </div>
+        </div>
+
+
         {/* House rules */}
         <div className="mb-5">
           <h2 className="text-lg font-semibold text-gray-100 mb-3">House rules</h2>
@@ -149,6 +135,14 @@ export const RoomPage = ({ room = ROOM_DATA }) => {
             ))}
           </ul>
         </div>
+
+        {/* Description */}
+        <div className="mb-5">
+          <h2 className="text-lg font-semibold text-gray-100 mb-2">About this place</h2>
+          <p className="text-gray-400 text-sm leading-relaxed">{room.description}</p>
+        </div>
+
+
 
         {/* Owner contact - desktop */}
         <div className="hidden sm:flex items-center justify-between bg-gray-900 border border-gray-800 rounded-2xl p-5 mb-5">
@@ -172,22 +166,7 @@ export const RoomPage = ({ room = ROOM_DATA }) => {
           </button>
         </div>
 
-        {/* Map */}
-        <div className="mb-5">
-          <h2 className="text-lg font-semibold text-gray-100 mb-3">Location</h2>
-          <div className="rounded-2xl overflow-hidden border border-gray-800">
-            <iframe
-              src={room.mapEmbedUrl}
-              width="100%"
-              height="300"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Room location map"
-            />
-          </div>
-        </div>
+
       </div>
 
       {/* Sticky call button - mobile */}
