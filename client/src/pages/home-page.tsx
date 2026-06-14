@@ -43,7 +43,7 @@ export const HomePage = () => {
   }, [city, priceRange, gender, roomType]);
 
   return (
-    <div className="min-h-screen bg-[#0F1117] ">
+    <div className="min-h-screen bg-zinc-900 ">
       {/* Top bar: city selector */}
       <div className="sticky top-0 z-10  border-b border-gray-800 px-4 py-3">
         <div className="max-w-7xl mx-auto flex items-center gap-3">
