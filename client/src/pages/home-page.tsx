@@ -43,9 +43,9 @@ export const HomePage = () => {
   }, [city, priceRange, gender, roomType]);
 
   return (
-    <div className="min-h-screen bg-gray-950">
+    <div className="min-h-screen bg-[#0F1117] ">
       {/* Top bar: city selector */}
-      <div className="sticky top-0 z-10 bg-gray-950 border-b border-gray-800 px-4 py-3">
+      <div className="sticky top-0 z-10  border-b border-gray-800 px-4 py-3">
         <div className="max-w-7xl mx-auto flex items-center gap-3">
           <div className="flex items-center gap-2 flex-1 sm:flex-none">
             <svg className="w-5 h-5 text-gray-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -156,7 +156,7 @@ export const HomePage = () => {
               <div
                 key={room.id}
                 onClick={()=> window.open("/room")}
-                className="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-gray-700 active:scale-[0.99] transition-all duration-150"
+                className="bg-[#1A1D27] border border-gray-800 rounded-2xl overflow-hidden hover:border-gray-700 active:scale-[0.99] transition-all duration-150"
               >
                 <div className="relative">
                   <img
@@ -177,7 +177,7 @@ export const HomePage = () => {
                   </h3>
                   <p className="text-gray-400 text-sm mb-2">{room.city}</p>
                   <div className="flex items-baseline gap-1">
-                    <span className="text-indigo-400 font-semibold text-lg">
+                    <span className="text-[#7C5CFC] font-semibold text-lg">
                       ₹{room.price.toLocaleString('en-IN')}
                     </span>
                     <span className="text-gray-500 text-sm">/month</span>
