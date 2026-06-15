@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import roomsDB from "../../data/rooms.json";
 
 const CITIES = ['Guwahati', 'Baihata Chariali', 'Mangaldai'];
@@ -145,9 +145,11 @@ export const HomePage = () => {
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {filteredRooms.map((room) => (
+              <Link to={{
+                pathname: `/room/${room.id}`
+              }}>
               <div
                 key={room.id}
-                onClick={() => window.open("/room")}
                 className="bg-[#1A1D27] border border-gray-800 rounded-2xl overflow-hidden hover:border-gray-700 active:scale-[0.99] transition-all duration-150"
               >
                 <div className="relative">
@@ -182,6 +184,7 @@ export const HomePage = () => {
                   </div>
                 </div>
               </div>
+              </Link>
             ))}
           </div>
         )}
