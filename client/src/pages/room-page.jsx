@@ -11,7 +11,7 @@ export const RoomPage = () => {
   const room = roomDB.listings[id - 1 ];
   console.log("Room", room);
   if(!room){
-    return <div>Room , not Found !</div>
+    return <div className='min-h-screen bg-gray-900 text-4xl text-gray-50 p-3 text-pretty text-center '> Sorry, Room not found ! </div>
   }
 
 
@@ -43,7 +43,7 @@ export const RoomPage = () => {
                   }`}
               >
                 <img
-                  src={img}
+                  src={img}z
                   alt={`Thumbnail ${idx + 1}`}
                   className="w-full h-12 sm:h-16 object-cover"
                 />

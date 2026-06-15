@@ -150,7 +150,7 @@ export const HomePage = () => {
               }}>
               <div
                 key={room.id}
-                className="bg-[#1A1D27] border border-gray-800 rounded-2xl overflow-hidden hover:border-gray-700 active:scale-[0.99] transition-all duration-150"
+                className="bg-gray-800 border border-gray-800 rounded-2xl overflow-hidden hover:border-gray-700 active:scale-[0.99] transition-all duration-150"
               >
                 <div className="relative">
                   <img

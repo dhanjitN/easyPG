@@ -1,0 +1,6 @@
+{
+  "appId": "space.dhanjit.easypg",
+  "appName": "EasyPG",
+  "npmClient": "npm",
+  "webDir": "dist"
+}
