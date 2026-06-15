@@ -8,10 +8,10 @@ const ROOMS = roomsDB.listings;
 
 const PRICE_RANGES = [
   { label: 'Any price', min: 0, max: Infinity },
-  { label: 'Under ₹8,000', min: 0, max: 8000 },
-  { label: '₹8,000 - ₹12,000', min: 8000, max: 12000 },
-  { label: '₹12,000 - ₹18,000', min: 12000, max: 18000 },
-  { label: 'Above ₹18,000', min: 18000, max: Infinity },
+  { label: 'Under ₹2,000', min: 0, max: 2000 },
+  { label: '₹2,000 - ₹4,000', min: 2000, max: 4000 },
+  { label: '₹4,000 - ₹8,000', min: 4000, max: 8000 },
+  { label: 'Above ₹8,000', min: 8000, max: Infinity },
 ];
 
 const GENDER_OPTIONS = ['Any', 'Male', 'Female'];
