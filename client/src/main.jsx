@@ -3,9 +3,9 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router'
 import './index.css'
 import App from './App.jsx'
-import HomePage from './pages/home-page.js'
+import HomePage from './pages/home-page.jsx'
 import Navbar from './components/Navbar.jsx'
-import RoomPage from './pages/room-page.js'
+import RoomPage from './pages/room-page.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

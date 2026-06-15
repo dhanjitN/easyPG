@@ -1,10 +1,20 @@
 import React, { useState } from 'react';
 import roomDB from "../../data/rooms.json";
 
+import { useParams } from 'react-router';
 
-const ROOM_DATA = roomDB.listings[0];
 
-export const RoomPage = ({ room = ROOM_DATA }) => {
+export const RoomPage = () => {
+  const params = useParams();
+  const { id } = params;
+
+  const room = roomDB.listings[id - 1 ];
+  console.log("Room", room);
+  if(!room){
+    return <div>Room , not Found !</div>
+  }
+
+
   const [activeImage, setActiveImage] = useState(0);
 
   const handleCall = () => {
@@ -63,6 +73,7 @@ export const RoomPage = ({ room = ROOM_DATA }) => {
           {/* ... */}
         </div>
 
+        <h1 className='text-white text-4xl font-semibold p-2'>{room.name}</h1>
         {/* Price card */}
         <div className="bg-gray-900 border border-gray-800 rounded-2xl p-4 sm:p-5 mb-5 flex flex-wrap items-center justify-between gap-4">
           <div>
