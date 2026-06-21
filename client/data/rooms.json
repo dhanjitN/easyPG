@@ -2,15 +2,15 @@
   "listings": [
     {
       "id": 1,
-      "name": "Sunrise PG for Men",
+      "name": "Sunrise PG  ",
       "city": "Guwahati",
-      "location": "Koramangala, 5th Block, Bangalore - 560095",
+      "location": "Near Cotton University, 5th Block, Guwahati - 781001",
       "gender": "Male",
       "type": "PG",
       "price": 3000,
       "deposit": 16000,
       "availableFrom": "1st July 2026",
-      "description": "A comfortable and well-maintained PG located in the heart of Koramangala, just 5 minutes walk from the bus stop and close to major tech parks. The rooms are spacious with attached washrooms, and the property offers a homely environment with all essential amenities.",
+      "description": "Fully Furnished rooms avilable for boy/girl , 5mins from Cotton University",
       "amenities": ["Free WiFi", "Power Backup 24x7 Inverter ", "Conntected Batroom ", "Connected Kitchen", "Parking Avilable", "Water Tap System Avilable "],
       "rules": ["No smoking inside premises", "Visitors allowed till 8 PM", "Mandatory Check in before 10 PM"],
       "owner": { "name": "Ramesh Kumar", "phone": "+919876543210" },

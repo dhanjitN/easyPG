@@ -8,9 +8,9 @@ export const RoomPage = () => {
   const params = useParams();
   const { id } = params;
 
-  const room = roomDB.listings[id - 1 ];
+  const room = roomDB.listings[id - 1];
   console.log("Room", room);
-  if(!room){
+  if (!room) {
     return <div className='min-h-screen bg-gray-900 text-4xl text-gray-50 p-3 text-pretty text-center '> Sorry, Room not found ! </div>
   }
 
@@ -43,7 +43,7 @@ export const RoomPage = () => {
                   }`}
               >
                 <img
-                  src={img}z
+                  src={img} z
                   alt={`Thumbnail ${idx + 1}`}
                   className="w-full h-12 sm:h-16 object-cover"
                 />
@@ -70,10 +70,19 @@ export const RoomPage = () => {
               {room.gender}
             </span>
           </div>
+          <h1 className="text-2xl sm:text-3xl font-semibold text-gray-100 mb-1">
+            {room.name}
+          </h1>
+          <div className="flex items-center gap-1.5 text-gray-400 text-sm">
+            <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            {room.location}
+          </div>
           {/* ... */}
         </div>
 
-        <h1 className='text-white text-4xl font-semibold p-2'>{room.name}</h1>
         {/* Price card */}
         <div className="bg-gray-900 border border-gray-800 rounded-2xl p-4 sm:p-5 mb-5 flex flex-wrap items-center justify-between gap-4">
           <div>
@@ -148,10 +157,16 @@ export const RoomPage = () => {
         </div>
 
         {/* Description */}
+        {
+          /*
         <div className="mb-5">
           <h2 className="text-lg font-semibold text-gray-100 mb-2">About this place</h2>
           <p className="text-gray-400 text-sm leading-relaxed">{room.description}</p>
         </div>
+
+          */
+        }
+
 
 
 
